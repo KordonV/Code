@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8"/>
+            <title>Shoke</title>
+            <link rel="stylesheet" type="text/css" href="sign.css"/>
+            <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <div id="toggleMenu" onclick="toggleMenu()"></div>
+            <nav id="menu">
+                <img src="logo.png">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Сервера</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCwQBNiYaZu3ZWUkHpNxifnw">Канал</a></li>
+                    <li><a href="#">Регистрация</a></li>
+                    <li><a href="sign.html">Войти</a></li>
+            </nav>
+            </div>
+            <div class="login">                                  
+                <img src="123.png" alt=""/>
+            </div>
+            <script>
+                var toggleStatus = 1;
+                function toggleMenu() {
+                    if (toggleStatus == 1) {
+                        document.getElementById("menu").style.left = "-240px";
+                        toggleStatus = 0;
+                    } else if (toggleStatus == 0) {
+                        document.getElementById("menu").style.left = "0px";
+                        toggleStatus = 1;
+                    }
+                }
+            </script>
+        </body>
+    </html>
